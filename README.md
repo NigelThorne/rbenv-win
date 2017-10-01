@@ -28,10 +28,7 @@ Install `rbenv for windows` to your `USERPROFILE` directory.
 2. Config path  
     Add the `bin` & `shims` directory to your `PATH` environment variable for access to the rbenv command
 
-    ````
-    > for /f "skip=2 delims=" %a in ('reg query HKCU\Environment /v Path') do set orgpath=%a
-    > setx Path "%USERPROFILE%\.rbenv-win\bin;%USERPROFILE%\.rbenv-win\shims;%orgpath:~22%"
-    ````
+    *Note:* I can't get a script to work reliably here... so you will have to do it manually.
 
 3. Restart your shell
 
